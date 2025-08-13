@@ -1,0 +1,68 @@
+@keyframes balanco {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+}
+
+#sobre h2 span,
+#sobre p span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  
+}
+
+#sobre h2 span:hover,
+#sobre p span:hover {
+  transform: scale(1.2);
+  animation: balanco 0.1s ease-in-out;
+}
+
+.hero h1 span,
+.hero p span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.hero h1 span:hover,
+.hero p span:hover {
+  transform: scale(1.2);
+  animation: balanco 0.4s ease-in-out;
+}
+
+.subtitulo-servicos span {
+  display: inline-block;
+  transition: transform 0.1s ease;
+  white-space: pre;
+}
+
+.subtitulo-servicos span:hover {
+  transform: scale(1.2); 
+  animation: balanco 0.1s ease-in-out;
+}
+
+.titulo-principal {
+  transition: transform 0.2s ease;
+}
+
+.titulo-principal:hover {
+  animation: balanco 0.4s ease-in-out;
+}
+
+.servico-box h3 {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.servico-box:hover h3 {
+  animation: balanco 0.4s ease-in-out;
+}
+
